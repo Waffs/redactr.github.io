@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scramble Text</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .stats {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scramble Your Text</h1>
+    <div class="container">
+        <textarea id="originalText" rows="10" placeholder="Enter your text here"></textarea>
+        <input type="text" id="wordsToScramble" placeholder="Words to scramble (separated by spaces)">
+        <input type="text" id="replacement" placeholder="Replacement for scrambled words (default: *)">
+        <button id="redactButton">Redact Now</button>
+    </div>
+    <div id="scrambledText"></div>
+    <div class="stats" id="stats"></div>
+    <script src="script.js"></script>
+</body>
+</html>
